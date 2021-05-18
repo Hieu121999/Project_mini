@@ -1,0 +1,174 @@
+                       :root {
+                          --primary-color: #fc5c31;
+                          --primary-color-rgba: rgba(255, 47, 20);
+                          --white-color: #fff;
+                          --black-color: #000;
+                          --text-color: #333;
+                          --star-gold-color: rgba(247, 202, 24, 0.9);
+                          --header-height: 120px;
+                          --header__navbar: 22px;
+                          --header__sort-bar: 50px;
+                          --header-with-search: calc(var(--header-height) - var(--header__navbar));
+                      }
+                      
+                      * {
+                          box-sizing: inherit;
+                      }
+                      
+                      html {
+                          font-size: 62.5%;
+                          line-height: 1.6rem;
+                          font-family: 'Roboto', sans-serif;
+                          box-sizing: border-box;
+                      }
+                      
+                      .grid__row {
+                          display: flex;
+                          flex-wrap: wrap;
+                          margin-left: -5px;
+                          margin-right: -5px;
+                      }
+                      /* test */
+                      
+                      .grid__column-2 {
+                          padding-left: 5px;
+                          padding-right: 5px;
+                          width: 16.6667%;
+                      }
+                      
+                      .grid__column-10 {
+                          padding-left: 5px;
+                          padding-right: 5px;
+                          width: 83.3334%;
+                      }
+                      
+                      .grid__column-2-4 {
+                          padding-left: 5px;
+                          padding-right: 5px;
+                          width: 20%;
+                      }
+                      
+                      @keyframes faceIn {
+                          from {
+                              opacity: 0;
+                          }
+                          to {
+                              opacity: 1;
+                          }
+                      }
+                      
+                      .modal {
+                          display: flex;
+                          position: fixed;
+                          top: 0;
+                          bottom: 0;
+                          right: 0;
+                          left: 0;
+                      }
+                      
+                      .modal__body {
+                          height: 100%;
+                          width: 100%;
+                          position: absolute;
+                          background-color: rgba(0, 0, 0, 0.4)
+                      }
+                      
+                      .modar__overlay {
+                          position: relative;
+                          margin: auto;
+                          border-radius: 5px;
+                          z-index: 1;
+                      }
+                      
+                      .btn {
+                          cursor: pointer;
+                          text-decoration: none;
+                          height: 36px;
+                          min-width: 142px;
+                          border: none;
+                          border-radius: 3px;
+                          font-size: 1.5rem;
+                          color: var(--black-color);
+                          align-items: center;
+                          justify-content: center;
+                          display: inline-flex;
+                          background-color: #ffffff;
+                      }
+                      
+                      .btn.btn--normal:hover {
+                          background-color: rgba(0, 0, 0, 0.1);
+                      }
+                      
+                      .btn.btn-priamry {
+                          cursor: pointer;
+                          color: var(--white-color);
+                          text-decoration: none;
+                          height: 36px;
+                          min-width: 142px;
+                          border: none;
+                          border-radius: 3px;
+                          font-size: 1.5rem;
+                          color: var(--black-color);
+                          align-items: center;
+                          justify-content: center;
+                          display: inline-flex;
+                          background-color: var(--primary-color)
+                      }
+                      /* selec-input */
+                      
+                      .selec-input {
+                          cursor: pointer;
+                          position: relative;
+                          min-width: 100px;
+                          padding: 0 6px;
+                          margin: 0 8px;
+                          text-decoration: none;
+                          height: 36px;
+                          min-width: 182px;
+                          border: none;
+                          border-radius: 3px;
+                          font-size: 1.5rem;
+                          color: var(--black-color);
+                          align-items: center;
+                          display: flex;
+                          background-color: #ffffff;
+                      }
+                      
+                      .selec-input__price {
+                          z-index: 1;
+                          background-color: var(--white-color);
+                          width: 40px;
+                          top: 38px;
+                          right: 0;
+                          position: absolute;
+                          width: 100%;
+                          display: none;
+                      }
+                      /* pagination */
+                      
+                      .pagination {
+                          display: flex;
+                          justify-content: center;
+                      }
+                      
+                      .pagination-item {
+                          list-style: none;
+                      }
+                      
+                      .pagination-item__link {
+                          color: rgba(153, 153, 153, 1);
+                          text-decoration: none;
+                          height: 34px;
+                          min-width: 34px;
+                          display: flex;
+                          align-items: center;
+                          justify-content: center;
+                          border-radius: 3px;
+                          font-size: 1.8rem;
+                          margin: 0 18px;
+                      }
+                      
+                      .pagination-item__link-present {
+                          background-color: var(--primary-color);
+                          color: var(--white-color);
+                      }
